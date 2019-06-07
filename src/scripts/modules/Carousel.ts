@@ -65,7 +65,7 @@ export default class Carousel {
           return slideInner ? slideInner.getBoundingClientRect().height : 0;
         },
         getLeftEdgeOfElement(element: HTMLElement): number {
-          return element.getBoundingClientRect().left;
+          return element.getBoundingClientRect().left - this.$el.getBoundingClientRect().left;
         },
         getDistanceToClosestSlide(): number {
           const initial = this.getLeftEdgeOfElement(this.slides[0]);
