@@ -10,7 +10,6 @@ module.exports = (env, argv) => {
     ...(IS_DEVELOPMENT
       ? {
           devtool: 'source-map',
-          devServer: require('./webpack.devServer'),
         }
       : {}),
   };
