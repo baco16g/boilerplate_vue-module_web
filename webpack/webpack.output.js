@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const PATH = require('../config/path');
 
 module.exports = {

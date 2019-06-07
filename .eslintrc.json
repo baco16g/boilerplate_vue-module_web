@@ -1,8 +1,5 @@
 {
   "parser": "vue-eslint-parser",
-  "parserOptions": {
-    "parser": "@typescript-eslint/parser"
-  },
   "plugins": [
     "vue",
     "jest"
@@ -23,5 +20,18 @@
     "browser": true,
     "context": true,
     "jestPuppeteer": true
-  }
+  },
+  "overrides": [{
+      "files": ["*.js"],
+      "parserOptions": {
+        "parser": "babel-eslint"
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser"
+      }
+    }
+  ]
 }
