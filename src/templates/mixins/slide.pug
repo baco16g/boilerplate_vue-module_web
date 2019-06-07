@@ -1,0 +1,4 @@
+mixin slide(imageSrc, imageAlt, className = 'mdl-carousel__item')
+  v-touch(v-on:panmove="panMoveHandler" v-on:panend="panEndHandler")
+    div(class=className)
+      img(src=imageSrc alt=imageAlt)

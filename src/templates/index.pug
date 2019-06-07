@@ -1,0 +1,23 @@
+include ./mixins/index
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Vue with Typescript and Webpack
+    link(rel="stylesheet" href="/app.css")
+  body
+    h1 This is a boilerplate for Vue.js
+    section
+    h2 Sample Carousel
+    div(class="mdl-carousel" data-vue-module="carousel")
+      div(class="mdl-carousel__items" data-vue-carousel="wrapper")
+        +slide("http://placehold.it/300x300/000000", 'placeholder')
+        +slide("http://placehold.it/500x300/ff00ff", 'placeholder')
+        +slide("http://placehold.it/200x300/ffff00", 'placeholder')
+        +slide("http://placehold.it/400x300/00ffff", 'placeholder')
+
+    script(src="/vendors.bundle.js")
+    script(src="/app.bundle.js")

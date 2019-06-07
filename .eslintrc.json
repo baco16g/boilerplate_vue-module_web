@@ -1,0 +1,27 @@
+{
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "plugins": [
+    "vue",
+    "jest"
+  ],
+  "extends": [
+    "teppeis/es2019",
+    "teppeis/+typescript",
+    "teppeis/+prettier",
+    "plugin:vue/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "page": true,
+    "browser": true,
+    "context": true,
+    "jestPuppeteer": true
+  }
+}
